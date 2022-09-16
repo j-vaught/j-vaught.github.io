@@ -1,13 +1,21 @@
 body{
-    background-color: #6368d4;
-    color: #ffffff;
+    color: #45A29E;
+    background-color: #1F2833;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     margin: 0;
 }
 h1{
-    color: #620202;
+    color: #66FCF1;
     font-size: 36px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 0;
+    text-align: center;
+}
+title{
+    color: #C5C6C7;
+    font-size: 48px;
     font-weight: 300;
     line-height: 1.1;
     margin: 0;
