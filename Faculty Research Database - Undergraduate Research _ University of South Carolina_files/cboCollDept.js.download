@@ -1,0 +1,234 @@
+//ssss
+	var xmlHttp = new Array(null,null,null,null,null);
+	var xmlHttpCollege = new Array(null,null,null,null);
+	var xmlHttpDept = new Array(null,null,null,null);
+	
+	function GetXmlHttpObject()
+	{ 
+		var objXMLHttp = null;
+		
+		if (window.XMLHttpRequest)
+			objXMLHttp = new XMLHttpRequest();
+		else if (window.ActiveXObject)
+			objXMLHttp = new ActiveXObject("Microsoft.XMLHTTP");
+		
+		return objXMLHttp;
+	}
+	
+	function fillMajor(frm, cmp, howManyMajorFlds, i, major, minor, path, startup)
+	{
+		var k = 0;
+		
+		if (cmp.selectedIndex == 0)
+		{
+			document.getElementById("divMajor" + i).innerHTML = "<select name=\"cboMajor" + i + "\" id=\"cboMajor" + i + "\"><option value=\"0\">Select One</option></select>"	
+
+			if (howManyMajorFlds > 1)
+				document.getElementById("divMinor" + i).innerHTML = "<select name=\"cboMinor" + i + "\" id=\"cboMinor" + i + "\"><option value=\"0\">Select One</option></select>"	
+		}
+		else
+		{
+			//CLEAR IF STARTUP
+			if (startup == "startup")
+			{
+				for(k = 0; k < 6; k++)
+				{
+					if (xmlHttp[k] == null)
+					{
+						xmlHttp[k] = GetXmlHttpObject();
+						break;
+					}
+				}
+			}
+			else
+			{
+				xmlHttp = new Array(null,null,null,null,null);
+				xmlHttp[k] = GetXmlHttpObject();
+			}
+			
+	
+			if (xmlHttp[k] == null)
+			{
+				alert ("Browser does not support HTTP Request");
+				return;
+			}
+		
+			var url = "/our/ajax/loadMajors.php";
+			var params = "currset=" + i + "&howmany=" + howManyMajorFlds + "&cid=" + escape(cmp.options[cmp.options.selectedIndex].value);
+		//console.log("REENCCA")
+			xmlHttp[k].onreadystatechange = function () {
+			
+					var vMajorList = "";
+		
+					if (xmlHttp[k].readyState == 4 || xmlHttp[k].readyState == "complete")
+					{	vMajorList = xmlHttp[k].responseText;
+                                            //console.log(vMajorList);
+                                        }
+			
+					if (vMajorList != "")
+					{
+						var arr = vMajorList.split("#");
+						
+						document.getElementById("divMajor" + arr[0]).innerHTML = "" +
+									"<select name=\"cboMajor" + arr[0] + "\" id=\"cboMajor" + arr[0] + "\"><option value=\"0\">Select One</option>" +
+									insertSelect(arr[2], major) + "</select>";
+					
+						if (arr[1] > 1)
+						{
+							document.getElementById("divMinor" + arr[0]).innerHTML = "" +
+									"<select name=\"cboMinor" + arr[0] + "\" id=\"cboMinor" + arr[0] + "\"><option value=\"0\">Select One</option>" +
+									insertSelect(arr[2], minor) + "</select>";
+						}
+					}
+			}
+			xmlHttp[k].open("POST",url,true);
+			xmlHttp[k].setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+//			xmlHttp[k].setRequestHeader("Content-length", params.length);
+//			xmlHttp[k].setRequestHeader("Connection", "close");
+			xmlHttp[k].send(params);
+		}
+	}
+	
+	function insertSelect(txtcbo, val)
+	{
+		return txtcbo.replace("<option value=\"" + val + "\">", "<option value=\"" + val + "\" selected>");	
+	}
+	
+	function fillCollege(frm, cmp, i, college, path, startup)
+	{
+		var k = 0;
+             
+	
+		if (cmp.selectedIndex == 0)
+			document.getElementById("divMentorCollege" + i).innerHTML = "<select name=\"cboMentorCollege" + i + "\" id=\"cboMentorCollege" + i + "\"><option value=\"0\">Select One</option></select>"	
+		else
+		{
+			//CLEAR IF STARTUP
+			if (startup == "startup")
+			{
+				for(k = 0; k < 6; k++)
+				{
+					if (xmlHttpCollege[k] == null)
+					{
+						xmlHttpCollege[k] = GetXmlHttpObject();
+						break;
+					}
+				}
+			}
+			else
+			{
+				xmlHttpCollege = new Array(null,null,null,null);
+				xmlHttpCollege[k] = GetXmlHttpObject();
+			}
+			
+	
+			if (xmlHttpCollege[k] == null)
+			{
+				alert ("Browser does not support HTTP Request");
+				return;
+			}
+		
+			var url = "/our/ajax/loadColleges.php";
+			var params = "currset=" + i + "&cid=" + escape(cmp.options[cmp.options.selectedIndex].value);
+		
+			xmlHttpCollege[k].onreadystatechange = function () {
+					
+					var vCollegeList = "";
+		
+					if (xmlHttpCollege[k].readyState == 4 || xmlHttpCollege[k].readyState == "complete")
+					{
+                                            vCollegeList = xmlHttpCollege[k].responseText;
+                                        }
+			
+					if (vCollegeList != "")
+					{
+						var arr = vCollegeList.split("#");
+						
+						document.getElementById("divMentorCollege" + arr[0]).innerHTML = "" +
+									"<select name=\"cboMentorCollege" + arr[0] + "\" id=\"cboMentorCollege" + arr[0] + "\"><option value=\"0\">Select One</option>" +
+									insertSelect(arr[1], college) + "</select>";
+					}
+			}
+			xmlHttpCollege[k].open("POST",url,true);
+			xmlHttpCollege[k].setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+//			xmlHttpCollege[k].setRequestHeader("Content-length", params.length);
+//			xmlHttpCollege[k].setRequestHeader("Connection", "close");
+			xmlHttpCollege[k].send(params);
+		}
+	}
+	
+	function fillDept(frm, cmp, i, dept, path, startup)
+	{
+		var k = 0;
+		
+		if (cmp.selectedIndex == 0)
+			document.getElementById("divMentorDept" + i).innerHTML = "<select name=\"cboMentorDept" + i + "\" id=\"cboMentorDept" + i + "\"><option value=\"0\">Select One</option></select>"	
+		else
+		{
+			//CLEAR IF STARTUP
+			if (startup == "startup")
+			{
+				for(k = 0; k < 6; k++)
+				{
+					if (xmlHttpDept[k] == null)
+					{
+						xmlHttpDept[k] = GetXmlHttpObject();
+						break;
+					}
+				}
+			}
+			else
+			{
+				xmlHttpDept = new Array(null,null,null,null);
+				xmlHttpDept[k] = GetXmlHttpObject();
+			}
+			
+	
+			if (xmlHttpDept[k] == null)
+			{
+				alert ("Browser does not support HTTP Request");
+				return;
+			}
+		
+			var url = "/our/ajax/loadDepts.php";
+			var params = "currset=" + i + "&cid=" + escape(cmp.options[cmp.options.selectedIndex].value);
+			var otherstring = "";
+			
+			xmlHttpDept[k].onreadystatechange = function () {
+					
+					var vDeptList = "";
+		
+					if (xmlHttpDept[k].readyState == 4 || xmlHttpDept[k].readyState == "complete")
+						vDeptList = xmlHttpDept[k].responseText;
+			
+					if (vDeptList != "")
+					{
+						var arr = vDeptList.split("#");
+						
+						if (location.pathname.indexOf("caravel") != -1)
+							otherstring = "<option value=\"999\" " + (dept == "999" ? " selected " : "") + ">Other</option>";
+							
+						document.getElementById("divMentorDept" + arr[0]).innerHTML = "" +
+									"<select name=\"cboMentorDept" + arr[0] + "\" id=\"cboMentorDept" + arr[0] + "\" onChange=\"javascript:setDeptOther(this,"+ i+");\"><option value=\"0\">Select One</option>" +
+									insertSelect(arr[1], dept) + otherstring + "</select>";
+					}
+			}
+			xmlHttpDept[k].open("POST",url,true);
+			xmlHttpDept[k].setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+//			xmlHttpDept[k].setRequestHeader("Content-length", params.length);
+//			xmlHttpDept[k].setRequestHeader("Connection", "close");
+			xmlHttpDept[k].send(params);
+		}
+	}
+
+	function setDeptOther(cbo, cnt)
+	{
+		if (document.getElementById('divMentorDeptOther' + cnt) != null)
+		{
+			if (cbo.options[cbo.selectedIndex].value == '999')
+				document.getElementById('divMentorDeptOther' + cnt).style.display = "block";
+			else
+				document.getElementById('divMentorDeptOther' + cnt).style.display = "none";
+		}
+	}	
+	

@@ -1,49 +1,296 @@
-<DOCTYPE html>
-    <header class="head">
-      <a style=font-family:Arial;font-size:30px; href="class/index.html">My CSCE 190 Site</a>
-      <a style=font-family:Arial;font-size:30px; href="https://github.com/j-vaught">My Github</a>
-      <a style=font-family:Arial;font-size:30px; href="https://www.linkedin.com/in/j-vaught/">My LinkedIn</a>
-      <a style=font-family:Arial;font-size:30px; href="personal/Resume.pdf">My Resume</a>
-    </header>
-    <main>
-      <div class="intro">
-        <h1 style=font-family:Arial;color:#73000a;font-size:40px;>Jacob Vaught's CS,ME,EE UofSC CEC Website</h1>
-        <p style="font-family: Arial";>I am an un-motivated, high-achieving student at The University of South Carolina.</p>
-      </div>
-      <div class="Achievements">
-        <div class="stuff">
-          <i class="fas fa-atom"></i>
-          <h1 style= font-family:Arial;color:#73000a;font-size:30px;">Projects/Research</h1>
-          <p style="font-family: Arial";>I have worked on many projects. I worked with Dr. Downey in the ARTS-Lab with FPGAs, FEA, and RTC. I have also worked with Dr. Lang Yuan with LPBFAM utilizing FEA. I presented my findings with Dr. Yuan at the Summer 2021 Undergraduate Research Symposium</p>
-        </div>
-        <div class="stuff">
-          <i class="fas fa-atom"></i>
-          <h1 style= font-family:Arial;color:#73000a;font-size:30px;">Hobbies</h1>
-          <p style="font-family: Arial";>I love spending time doing HW for classes, and I usually do extra HW to get on Professors' good side. During some research for a HW Assignment, I fell into a "Rabbit-Hole", researching CEC statistics and I discovered an alarming trend here at UofSC. Check out the Engineering Enrollment statistics below.</p>
-          <input type="button" onclick="window.location.href='personal/UofSC_Data.pdf';" value="UofSC Statistics" />  
-          <input type="button" onclick="window.location.href='personal/Clemson_Data.pdf';" value="Clemson Statistics" />  
-        </div>
-        <div class="stuff">
-          <i class="fas fa-skiing"></i>
-          <h1 style="font-family:Arial;color:#73000a;font-size:30px;">Skills</h1>
-          <p style="font-family: Arial";>My Skills include, but are not limited to: FEA Modelling, CAD Modelling, Java Programming, Python Programming, MATLAB Programming, Digital Logic Design, Computer Architecture, and some Proficiency in C/C++ Programming </p>
-        </div>
-        <div class="stuff">
-          <i class="fas fa-ethernet"></i>
-          <h1 style= font-family:Arial;color:#73000a;font-size:30px;">Networking</h1>
-          <p style="font-family: Arial";>I have spent a few years honing my networking and leadership skills. Recently, I took up a position as Secretary of ASME, an Engineering club on campus, and I have been communicating with department heads, other companies, etc. I also plan to join Student Government. I decided to do this after noticing that the Engineering College had a few unfilled positions due to low interest from the college.</p>
+<!DOCTYPE html>
+<!-- saved from url=(0113)https://sc.edu/about/offices_and_divisions/undergraduate_research/get-started/faculty_research_database/index.php -->
+
+<html>
+    <style data-merge-styles="true"></style>
+    <title>ASME Faculty Research Database - Undergraduate Research | University of South Carolina</title>
+    <link rel="stylesheet" href="./Faculty Research Database - Undergraduate Research _ University of South Carolina_files/flexslider.css">
+    
+    <link rel="preload" href="https://sc.edu/_global_resources/fonts/BerlingskeSansXCn-XBd.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://sc.edu/_global_resources/fonts/BerlingskeSans-XBd.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://sc.edu/_global_resources/fonts/BerlingskeSans-Md.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://sc.edu/_global_resources/fonts/BerlingskeSerif-Bd.woff2" as="font" type="font/woff2" crossorigin="">
+    
+    <!-- Fonts below -->
+    <style>
+        @font-face {
+            font-family:'Berlingske Sans';
+            src:	url('https://sc.edu/_global_resources/fonts/BerlingskeSans-Md.woff2') format('woff2'),
+            url('https://sc.edu/_global_resources/fonts/BerlingskeSans-Md.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family:'Berlingske Sans';
+            src:	url('https://sc.edu/_global_resources/fonts/BerlingskeSans-XBd.woff2') format('woff2'),
+            url('https://sc.edu/_global_resources/fonts/BerlingskeSans-XBd.woff') format('woff');
+            font-weight: 800;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family:'Berlingske Sans Extracondensed';
+            src:	url('https://sc.edu/_global_resources/fonts/BerlingskeSansXCn-XBd.woff2') format('woff2'),
+            url('https://sc.edu/_global_resources/fonts/BerlingskeSansXCn-XBd.woff') format('woff');
+            font-weight: 800;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family:'Berlingske Serif';
+            src:    url('https://sc.edu/_global_resources/fonts/BerlingskeSerif-Bd.woff2') format('woff2'),
+            url('https://sc.edu/_global_resources/fonts/BerlingskeSerif-Bd.woff') format('woff');
+            font-weight: 700;
+            font-display: swap;
+        }
+    </style>      
+    
+    <link rel="stylesheet" href="./Faculty Research Database - Undergraduate Research _ University of South Carolina_files/global.css">
+    <link rel="stylesheet" href="./Faculty Research Database - Undergraduate Research _ University of South Carolina_files/site.css">
+    <link rel="stylesheet" href="./Faculty Research Database - Undergraduate Research _ University of South Carolina_files/jquery.fancybox.css">
+    <link rel="stylesheet" href="./Faculty Research Database - Undergraduate Research _ University of South Carolina_files/jquery.fancybox-buttons.css">
+    <link rel="stylesheet" href="./Faculty Research Database - Undergraduate Research _ University of South Carolina_files/mediaqueries.css"><script src="./Faculty Research Database - Undergraduate Research _ University of South Carolina_files/modernizr-2.0.6.min.js.download"></script><script src="./Faculty Research Database - Undergraduate Research _ University of South Carolina_files/respond.min.js.download"></script>
+    
+    <link rel="stylesheet" href="./Faculty Research Database - Undergraduate Research _ University of South Carolina_files/jquery.dataTables.css">
+    
+    <style>	
+        .custom-dropdown {
+            position: relative;
+            margin-bottom: 1em;
+            width: 100%; }
+        .custom-dropdown:before, .custom-dropdown:after {
+            content: "";
+            position: absolute;
+            pointer-events: none; }
+        .custom-dropdown:before {
+            width: 2em;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 0 7px 7px 0;
+            background-color: #a3a3a3; }
+        .custom-dropdown:after {
+            content: "\25BC";
+            height: 1em;
+            font-size: .625em;
+            line-height: 1;
+            right: 1.2em;
+            top: 50%;
+            margin-top: -.5em;
+            color: #FFF; }              
+        select {
+            width: 100% !important;
+            background: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            margin-bottom: 0;
+            padding: .5em;
+            font-size: .875em;
+            /* 14px / 16px */
+            background-color: #fff;
+            max-width: none; }              
+        select::-ms-expand {
+            display: none; }                     
+        .footnote {
+            display: inline-block;
+            font-size: 12px;
+            margin-top: 2em;
+        }                      
+        .gridtable td:nth-child(n+4):nth-child(-n+6){
+            border: 1px solid white;
+        }
+        .content-body label {
+            font-weight: 600;
+        }
+        table.dataTable { margin-top: 0; }
+        .smallblack {
+            font-size: 12px;
+        }
+        .colorwrapper{
+            position:relative;
+            float:right;
+        }
+        .filter-controls {
+            position: relative;
+            padding: 20px;
+            border: 2px solid #fff;
+        }  
+        .filter--title { 
+            float: left;
+            margin-top: 0;
+        }
+        .filter--label {
+            float: left;
+            width: auto;
+            margin-right: 1.5em;
+            margin-bottom: .5em;
+        }
+        .filter--dropdown-wrapper {
+            z-index: 10;
+            margin-bottom: 1em;
+        }
+        @media only screen and (min-width: 48em) {
+            .filter--dropdown-wrapper { margin: 0; }
+        }                     
+    </style>
+    
+    <body>
+
+        <h1><br></h1>
+        <h1><center>CEC Mechanical Engineering Faculty Research Database</center></h1>
+        <h2><center>Brought to you by ASME in collaboration with Pi Tau Sigma</center></h2>
+    <!-- Faculty update info paragraph -->
+    <section class="column grid_9">
+        <div id="mainContent">
+        
+        <section class="content-body">
+            <div class="row row">
+            <div class="column grid_9"></div>
+        </section>
+        <h3>For Students:</h3>
+        <p>Faculty will get a weekly email with all applicants, so please wait for a response.</p>
+
+        <h3>For Faculty:</h3>
+        <p>Please email <a href="mailto:ASME@sc.edu"><span>ASME@sc.edu</span></a> directly to be added to the system or to update/edit your entry. Include weblinks,
+            research topics/keywords, and any other information you would like provided for students.
+        If positions are available, please list available positions to be added to Form.</p>
+    </section>
+
+    <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer"><table border="0" style="width: 80%;" cellpadding="5" cellspacing="0" class="gridtable dataTable no-footer" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info" role="grid">
+        
+        <!-- initializing rows -->
+        <thead>
+            <tr role="row">
+                <th class="sorting_asc" aria-sort="ascending">Name</th>
+                <th>Email</th>
+                <th>Office</th>
+                <th>Department</th>
+                <th>Research Interests</th>
+                <th>Available Positions</th>
+                
+            </tr>
+        </thead>
+        
+        <tbody>
             
+            <tr role="row" class="odd">
+                <td valign="top" class="sorting_1"><a href="https://uscengr.com/" class="new-window"><b>Doe, John</b></a></td>
+                <td valign="top">jdoe@sc.edu</td>
+                <td valign="top">300MN A123</td>
+                <td valign="top">Mechanical Engineering</td>
+                <td valign="top">Interested in bringing Mechanical Engineering to lower-income families</td>
+                <td valign="top"><a href="https://uscengr.com/" class="new-window"><b>Form</b></a></td>
+            </tr>
+
+            <tr role="row" class="even">
+                <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/austin_downey.php" target="_blank" class="new-window"><b>Downey, Austin</b></a></td>
+                <td valign="top">austindowney@sc.edu</td>
+                <td valign="top">300MN A133</td>
+                <td valign="top">Mechanical Engineering</td>
+                <td valign="top">low-latency machine learning, real-time model-updating, adaptive structures, and structural health monitoring</td>
+                <td valign="top"><a href="https://forms.office.com/r/aWskJJX1JD" class="new-window"><b>Form</b></a></td>
+            </tr>
+            
+            <tr role="row" class="odd">
+                <td valign="top" class="sorting_1"><a href="https://www.usca.edu/mathematical-sciences/directory/person/hani-abu-salem" target="_blank" class="new-window"><b>Abu-Salem, Hani</b></a></td>
+                <td valign="top">HaniA@usca.edu</td>
+                <td valign="top">Aiken</td>
+                <td valign="top">Math/Computer Science</td>
+                <td valign="top">retrieval and natural language processing; building systems that can deal with human language;  storing, processing, and retrieving multi-lingual data; text summarization</td>  
+            </tr>
+
+            <tr role="row" class="even">
+                <td valign="top" class="sorting_1"><a href="http://www.sc.edu/study/colleges_schools/music/faculty-staff/Ackley.php" target="_blank" class="new-window"><b>Ackley, James</b></a></td>
+                <td valign="top">ackley@mailbox.sc.edu</td>
+                <td valign="top">Columbia</td>
+                <td valign="top">Music</td>
+                <td valign="top">Trumpet; international trumpet; brass; solo, recital; composition</td>
+            </tr>
+            
+            <tr role="row" class="odd">
+                <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/public_health/faculty-staff/adams_charley.php" target="_blank" class="new-window"><b>Adams, Charley</b></a></td>
+                <td valign="top">charley@sc.edu</td>
+                <td valign="top">Columbia</td>
+                <td valign="top">Communication Sciences and Disorders</td>
+                <td valign="top">Fluency Disorders; Neurogenics; Accent Training; Self-Help/Support; Acquired Dyslexia; Speechreading; Clinical Research; Primary Progressive Aphasia</td>
+            </tr>
+            
+            <tr role="row" class="even">
+                <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/public_health/faculty-staff/adams_elizabeth.php" target="_blank" class="new-window"><b>Adams, Elizabeth</b></a></td>
+                <td valign="top">elizabeth-adams@sc.edu</td>
+                <td valign="top">Columbia</td>
+                <td valign="top">Exercise Science</td>
+                <td valign="top">The promotion of healthful dietary patterns to prevent pediatric obesity and reduce health inequities; Investigates parenting and family-based influences on children's obesogenic behaviors to prevent the intergenerational transmission of obesity; Investigations on federal polices to ensure children from all income levels  have access to healthful nutrition for chronic disease prevention</td>
+            </tr><tr role="row" class="odd">
+                
+                <td valign="top" class="sorting_1"><a href="http://sc.edu/study/colleges_schools/law/faculty_and_staff/directory/adams_gregory.php" target="_blank" class="new-window"><b>Adams, Gregory</b></a></td>
+                <td valign="top">g.b.adams@sc.edu</td>
+                <td valign="top">Columbia</td>
+                <td valign="top">Law</td>
+                <td valign="top">Advanced Legal Profession; Business Corporations; Contracts; Close Corporation and Partnership Planning; Law Firm Equity Workshop; Professional Responsibility; Judicial Ethics</td>
+                
+                
+                
+            </tr><tr role="row" class="even">
+                
+                <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/artsandsciences/criminology_and_criminal_justice/our_people/directory/adams_ian.php" target="_blank" class="new-window"><b>Adams, Ian</b></a></td>
+                <td valign="top">ian.adams@sc.edu</td>
+                <td valign="top">Columbia</td>
+                <td valign="top">Criminology and Criminal Justice</td>
+                <td valign="top">Policing; Body-worn cameras; Policy evaluation</td>
+                
+                
+                
+            </tr><tr role="row" class="odd">
+                
+                <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/chemistry_and_biochemistry/our_people/directory/adams_richard.php" target="_blank" class="new-window"><b>Adams, Richard</b></a></td>
+                <td valign="top">adamsrd@mailbox.sc.edu</td>
+                <td valign="top">Columbia</td>
+                <td valign="top">Chemistry and Biochemistry</td>
+                <td valign="top">Bimetallic Complexes for Applications in Catalysis; Studies of the synthesis, structures, and catalytic properties of unsaturated bimetallic clusters and nanoparticles for hydrogen activation and selective oxidation reactions</td>
+                
+                
+                
+            </tr><tr role="row" class="even">
+                
+                <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/public_health/faculty-staff/adams_swann.php" target="_blank" class="new-window"><b>Adams, Swann</b></a></td>
+                <td valign="top">swann.adams@sc.edu</td>
+                <td valign="top">Columbia; Columbia</td>
+                <td valign="top">Nursing; Epidemiology and Biostatistics</td>
+                <td valign="top">Cancer survivorship; breast cancer screening; epidemiology; premature discontinuation of cancer treatment; subject recruitment strategies; cancer; inflammation processes; dietary and physical activity interventions; ethnic disparities; physical activity epidemiology; co-occurrence of diabetes and breast cancer among women by ethnicity; nutritional status, DNA damage, and tumors Pathology **Interested in conducting research in Nursing? Please submit the following form: https://redcap.healthsciencessc.org/surveys/?s=9A4LJDTYPN**</td>
+                
+                
+                
+            </tr><tr role="row" class="odd">
+                
+                <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/moore/directory/addison_john.php" target="_blank" class="new-window"><b>Addison, John</b></a></td>
+                <td valign="top">ecceaddi@moore.sc.edu</td>
+                <td valign="top">Columbia</td>
+                <td valign="top">Economics</td>
+                <td valign="top">worker representation; quality of employer-employee job matches; minimum wages; erosion of collective bargaining in Germany and its consequences; high dimensional fixed effect wage regression models; aspects of female pay and career progression</td>
+                
+                
+                
+            </tr><tr role="row" class="even">
+                <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/public_health/faculty-staff/addy_cheryl.php" target="_blank" class="new-window"><b>Addy, Cheryl</b></a></td>
+                <td valign="top">caddy@sc.edu</td>
+                <td valign="top">Columbia</td>
+                <td valign="top">Epidemiology and Biostatistics</td>
+                <td valign="top">Categorical data analysis; Survey data analysis; Community interventions; Epidemiologic methods; Physical activity and public health; Psychiatric epidemiology; Maternal and child health</td>
+            </tr>
+            
+            <tr role="row" class="odd">
+                <td valign="top" class="sorting_1"><a href="https://www.uscupstate.edu/academics/college-of-science-and-technology/department-of-informatics-and-engineering-systems/contact-us/" target="_blank" class="new-window"><b>Adebiaye, Richmond</b></a></td>
+                <td valign="top">RADEBIAY@USCUPSTATE.EDU</td>
+                <td valign="top">Upstate</td>
+                <td valign="top">Informatics</td>
+                <td valign="top">Information Security Architecture; Mobile Security and Forensics development; Information and Data Analytical Science; Privacy-enhancing Technologies imprecision; Single sign-on; Security Level Management</td>            
+            </tr>
+
+
+
+
+
+        </tbody>
     </div>
-      </div>
-      <div class="about-me">
-        <div class="about-me-text">
-     <h2 style= font-family:Arial;color:#73000a;font-size:20px;">About Me</h2>      
-          <p style="font-family: Arial";>I am a student, and I am interested in anything to do with Electrical Engineering, Mechanical Engineering, and especially Computer Engineering/Science!!</p>
-        </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="bottom-links">
-        <a href="personal/Major_Map.html">My Major Map</a>
-      </div>
-    </footer>

@@ -1,0 +1,70 @@
+/* Author: OmniUpdate
+	Purpose: Adjust Leftnav pieces into place.
+
+*/
+
+$(document).ready(function () {
+	var tokenPath = ouDirName.replace(ouSubSite, '').split('/');
+	var rootFolder = "/";
+	//console.log(tokenPath.length);
+	if (tokenPath.length > 2){
+		rootFolder = ouSubSite + "/" + tokenPath[1] + "/";
+		
+		// Toplevel Nesting
+		$("#mainnav ul.toplevel").children("li").each(function(index){
+			//console.log($(this).find($('a')).attr("href") + "---" + rootFolder);
+			if ($(this).find($('a')).attr("href").toLowerCase().indexOf(rootFolder) >= 0){
+				if($("#mainnav ul.sublevel").length > 0){
+					$(this).addClass('historylevel');
+					$(this).append($("#mainnav ul.sublevel").first());
+				}else if($("#mainnav ul#firstlevel").length > 0){
+					$(this).append('<ul class="currentlevel"><li id="selected">'+'</li></ul>');
+					$(this).find('a').appendTo($('li#selected'));
+					$('#mainnav li#selected').append($("ul#firstlevel"));
+				}else if ($("#mainnav ul.currentlevel").length > 0){
+					$(this).addClass('historylevel');
+					$(this).append($("#mainnav ul.currentlevel"));
+				}else{
+					$(this).append('<ul class="currentlevel"><li id="selected">'+'</li></ul>');
+					$(this).find('a').appendTo($('li#selected'));
+				}
+			}
+		});
+		
+		// Parent + SubNav Nesting
+		$('ul.currentlevel').children('li').each(function(index){
+			//console.log($(this).find($('a')).attr("href"));
+			//console.log(ouDirName);
+			if ($('ul#parent_nav').length > 0 ){
+				if ($(this).find($('a')).attr("href").toLowerCase().indexOf(ouDirName) >= 0){
+					$(this).attr('id', 'selected');
+					//$(this).find($('a')).contents().unwrap();
+					$(this).append($("#child_nav"));
+				}
+			} else {
+				//console.log(ouHideLocal == true && ($(this).find($('a')).attr("href").toLowerCase().indexOf(ouDirName) >= 0));
+				if (ouHideLocal && $(this).find($('a')).attr("href").toLowerCase().indexOf(ouDirName) >= 0){
+					$(this).attr('id', 'selected');
+				} else if ($(this).find($('a')).attr("href").toLowerCase() == (ouDirName + ouFileName).toLowerCase()){
+					$(this).attr('id', 'selected');
+				}
+			}	
+		});
+
+	} else { //Page is at root
+		$("#mainnav ul.toplevel").children("li").each(function(index){
+			//console.log($(this).find($('a')).attr("href") + "---" + ouDirName + ouFileName);
+			var link = $(this).find($('a')).attr("href").toLowerCase();
+			if (link == ouDirName + ouFileName || link == ouDirName){
+				$(this).append('<ul class="currentlevel"><li id="selected">'+'</li></ul>');
+				$(this).find('a').appendTo($('#mainnav li#selected'));
+			}
+		});
+		
+		// Mobile Nav Fix (hides duplicate "College of Nursing" link)
+		$("ul.childLevel li:first-child").hide();
+	}
+	
+	if ($('#mainnav ul#child_nav').children('li').length == 0)
+		$('#mainnav ul#child_nav').remove();
+});
