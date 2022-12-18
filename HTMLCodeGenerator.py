@@ -41,7 +41,7 @@ with open('professors.csv', 'r') as csv_file:
     # Create the html code for the row
     html = f'<tr role="row" class="{row_class}">\n'
     html += f'  <td valign="top" class="sorting_1"><a href="{website}" class="new-window"><b>{name}</b></a></td>\n'
-    html += f'  <td valign="top">{email}</td>\n'
+    html += f'  <td valign="top"><a href="mailto:{email}"><b>{email}</b></a>\n'
     html += f'  <td valign="top">{office}</td>\n'
     html += f'  <td valign="top">{department}</td>\n'
     html += f'  <td valign="top">{research_interest}</td>\n'
