@@ -41,7 +41,7 @@ with open('professors.csv', 'r') as csv_file:
     # Create the html code for the row
     html = f'<tr role="row" class="{row_class}">\n'
     html += f'  <td valign="top" class="sorting_1"><a href="{website}" class="new-window"><b>{name}</b></a></td>\n'
-    html += f'  <td valign="top"><a href="mailto:{email}"><b>{email}</b></a>\n'
+    html += f'  <td valign="top"><a href="mailto:{email}"><b>{email}</b></a></td>\n'
     html += f'  <td valign="top">{office}</td>\n'
     html += f'  <td valign="top">{department}</td>\n'
     html += f'  <td valign="top">{research_interest}</td>\n'
@@ -55,7 +55,7 @@ with open('professors.csv', 'r') as csv_file:
     row_number += 1
 
 # Open a file to save the html code to
-with open('professors.txt', 'w') as out_file:
+with open('professors_html.txt', 'w') as out_file:
   # Write the html code to the file
   for html in html_code:
     out_file.write(html)
