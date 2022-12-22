@@ -1,50 +1,77 @@
-<DOCTYPE html>
-    <header class="head">
-      <a style=font-family:Arial;font-size:30px; href="class/index.html">My CSCE 190 Site</a>
-      <a style=font-family:Arial;font-size:30px; href="https://github.com/j-vaught">My Github</a>
-      <a style=font-family:Arial;font-size:30px; href="https://www.linkedin.com/in/j-vaught/">My LinkedIn</a>
-      <a style=font-family:Arial;font-size:30px; href="personal/Resume.pdf">My Resume</a>
-      <a style=font-family:Arial;font-size:30px; href="public/index.html">ASME Faculty Research Database</a>
-    </header>
-    <main>
-      <div class="intro">
-        <h1 style=font-family:Arial;color:#73000a;font-size:40px;>Jacob Vaught's CS,ME,EE UofSC CEC Website</h1>
-        <p style="font-family: Arial";>I am an un-motivated, high-achieving student at The University of South Carolina.</p>
-      </div>
-      <div class="Achievements">
-        <div class="stuff">
-          <i class="fas fa-atom"></i>
-          <h1 style= font-family:Arial;color:#73000a;font-size:30px;">Projects/Research</h1>
-          <p style="font-family: Arial";>I have worked on many projects. I worked with Dr. Downey in the ARTS-Lab with FPGAs, FEA, and RTC. I have also worked with Dr. Lang Yuan with LPBFAM utilizing FEA. I presented my findings with Dr. Yuan at the Summer 2021 Undergraduate Research Symposium</p>
-        </div>
-        <div class="stuff">
-          <i class="fas fa-atom"></i>
-          <h1 style= font-family:Arial;color:#73000a;font-size:30px;">Hobbies</h1>
-          <p style="font-family: Arial";>I love spending time doing HW for classes, and I usually do extra HW to get on Professors' good side. During some research for a HW Assignment, I fell into a "Rabbit-Hole", researching CEC statistics and I discovered an alarming trend here at UofSC. Check out the Engineering Enrollment statistics below.</p>
-          <input type="button" onclick="window.location.href='personal/UofSC_Data.pdf';" value="UofSC Statistics" />  
-          <input type="button" onclick="window.location.href='personal/Clemson_Data.pdf';" value="Clemson Statistics" />  
-        </div>
-        <div class="stuff">
-          <i class="fas fa-skiing"></i>
-          <h1 style="font-family:Arial;color:#73000a;font-size:30px;">Skills</h1>
-          <p style="font-family: Arial";>My Skills include, but are not limited to: FEA Modelling, CAD Modelling, Java Programming, Python Programming, MATLAB Programming, Digital Logic Design, Computer Architecture, and some Proficiency in C/C++ Programming </p>
-        </div>
-        <div class="stuff">
-          <i class="fas fa-ethernet"></i>
-          <h1 style= font-family:Arial;color:#73000a;font-size:30px;">Networking</h1>
-          <p style="font-family: Arial";>I have spent a few years honing my networking and leadership skills. Recently, I took up a position as Secretary of ASME, an Engineering club on campus, and I have been communicating with department heads, other companies, etc. I also plan to join Student Government. I decided to do this after noticing that the Engineering College had a few unfilled positions due to low interest from the college.</p>
-            
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Jacob Vaught Website</title>
+</head>
+<body>
+    <div class="nav-button">
+        <div class="nav-button-line"></div>
+        <div class="nav-button-line"></div>
+        <div class="nav-button-line"></div>
     </div>
-      </div>
-      <div class="about-me">
-        <div class="about-me-text">
-     <h2 style= font-family:Arial;color:#73000a;font-size:20px;">About Me</h2>      
-          <p style="font-family: Arial";>I am a student, and I am interested in anything to do with Electrical Engineering, Mechanical Engineering, and especially Computer Engineering/Science!!</p>
+    
+    <nav class="nav-menu">
+        <ul>
+          
+            <li><a href="https://www.linkedin.com/in/j-vaught/">LinkedIn</a></li>
+            <li><a href="personal/Resume.pdf">My Resume</a></li>
+            <li><a href="class/index.html">CSCE 190 Website</a></li>
+            <li><a href="https://github.com/j-vaught">Github</a></li>
+            <li><a href="public/index.html">Faculty Research Database</a></li>
+            <li><a href="clubs.html">CEC Clubs</a></li>
+            
+            
+        </ul>
+    </nav>    
+    
+    <script>
+        const navButton = document.querySelector('.nav-button');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        navButton.addEventListener('click', () => {
+            navButton.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+    <main>
+        <div class="intro">
+            <h1 style=font-family:Arial;color:#72000f;font-size:40px;>Jacob Vaught's CS,ME,EE USC Website</h1>
+            <p>I am an un-motivated, high-achieving student at The University of South Carolina.</p>
         </div>
-      </div>
+        <div class="body">
+            <div class="projects">
+                <h1><br><i class="fas fa-atom"></i> Research/Projects</h1>
+                <p>I have worked on many projects. I worked with Dr. Downey in the ARTS-Lab with FPGAs, FEA, and RTC. I have also worked with Dr. Lang Yuan with LPBFAM utilizing FEA. I presented my findings with Dr. Yuan at the Summer 2021 Undergraduate Research Symposium</p>
+            </div>
+            <div class="passion">
+                <h1><br><i class="fas fa-heart"></i> Hobbies</h1>
+                <p>I love spending time doing HW for classes, and I usually do extra HW to get on Professors' good side. During some research for a HW Assignment, I fell into a "Rabbit-Hole", researching CEC statistics and I discovered an alarming trend here at UofSC. Check out the Engineering Enrollment statistics below.</p>
+                <button class="modern-button" onclick="window.location.href='personal/UofSC_Data.pdf';">UofSC Statistics</button>  
+                <button class="modern-button" onclick="window.location.href='personal/Clemson_Data.pdf';">Clemson Statistics</button>
+
+            </div>
+            <div class="skills">
+                <h1><br><i class="fas fa-wrench"></i> Skills</h1>
+                <p>My Skills include, but are not limited to: FEA Modelling, CAD Modelling, Java Programming, Python Programming, MATLAB Programming, Digital Logic Design, Computer Architecture, and some Proficiency in C/C++ Programming </p>
+            </div>
+            <div class="leadership">
+                <h1><br><i class="fas fa-users"></i> Networking</h1>
+                <p>I have spent a few years honing my networking and leadership skills. Recently, I took up a position as Secretary of ASME, an Engineering club on campus, and I have been communicating with department heads, other companies, etc. I also plan to join Student Government. I decided to do this after noticing that the Engineering College had a few unfilled positions due to low interest from the college.</p>
+                
+            </div>
+        </div>
+        <div class="about-me">
+            <div class="about-me-text">
+                <h2><br><i class="fas fa-user"></i> About Me</h2>      
+                <p>I am a student, and I am interested in anything to do with Electrical Engineering, Mechanical Engineering, and especially Computer Engineering/Science!!</p>
+            </div>
+        </div>
     </main>
-    <footer class="footer">
-      <div class="bottom-links">
-        <a href="personal/Major_Map.html">My Major Map</a>
-      </div>
-    </footer>
+</body>
+<footer class="footer">
+    <div class="bottom-links">
+      <a href="personal/Major_Map.html">My Major Map</a>
+    </div>
+  </footer>
+</html>

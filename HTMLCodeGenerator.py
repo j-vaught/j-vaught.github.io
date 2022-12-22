@@ -9,7 +9,16 @@ with open('professors.csv', 'r') as csv_file:
   
   # Initialize a list to store the html code
   html_code = []
-  
+  html_code.append('<table><table style="width: 80%;" cellpadding="5" cellspacing="0" class="gridtable dataTable no-footer" id="DataTables_Table_0">')
+  html_code.append('<!-- initializing rows -->')
+  html_code.append('<tr>')
+  html_code.append('  <th>Name</th>')
+  html_code.append('  <th>Email</th>')
+  html_code.append('  <th>Office</th>')
+  html_code.append('  <th>Department</th>')
+  html_code.append('  <th>Research Interest</th>')
+  html_code.append('  <th>Hiring</th>')
+  html_code.append('</tr>')
   # Iterate over the rows in the csv file
   for row in csv_reader:
     # Skip the first row, which contains the headers
@@ -58,7 +67,8 @@ with open('professors.csv', 'r') as csv_file:
     row_number += 1
 
 # Open a file to save the html code to
-with open('professors_html.txt', 'w') as out_file:
+html_code.append('</table>')
+with open('professors.html', 'w') as out_file:
   # Write the html code to the file
   for html in html_code:
     out_file.write(html)

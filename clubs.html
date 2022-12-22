@@ -1,0 +1,38 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>CEC Clubs</title>
+</head>
+<body>
+    <div class="nav-button">
+        <div class="nav-button-line"></div>
+        <div class="nav-button-line"></div>
+        <div class="nav-button-line"></div>
+    </div>
+    
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="https://ieee.uscengr.com">IEEE</a></li>
+            <li><a href="https://sae.uscengr.com">SAE</a></li>
+            <li><a href="https://sampe.uscengr.com">SAMPE</a></li>
+            <li><a href="https://asme.uscengr.com">ASME</a></li>
+            <li><a href="https://rocketry.uscengr.com">Rocketry Club</a></li>
+            <li><a href="https://shpe.uscengr.com">SHPE</a></li>
+            <li><a href="https://pts.uscengr.com">Pi Tau Sigma</a></li>
+            <li><a href="https://sme.uscengr.com">SME</a></li>
+            <li><a href="https://aiaa.uscengr.com">AIAA</a></li>
+            <li><a href="https://swe.uscengr.com">SWE</a></li>
+            <li><a href="https://wic.uscengr.com">WIC</a></li>
+            <li><a href="https://acm.uscengr.com">ACM</a></li>
+            
+        </ul>
+    </nav>    
+    
+    <script>
+        const navButton = document.querySelector('.nav-button');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        navButton.addEventListener('click', () => {
+            navButton.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>

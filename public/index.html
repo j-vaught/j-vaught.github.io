@@ -136,388 +136,386 @@
     <p>Use the search bar to filter by research type.</p>
     <center><input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search by name or topic..."></center>
 
+    <!-- START Faculty table -->
+
     <table><table style="width: 80%;" cellpadding="5" cellspacing="0" class="gridtable dataTable no-footer" id="DataTables_Table_0">
-        
-        <!-- initializing rows -->
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Office</th>
-                <th>Department</th>
-                <th>Research Interests</th>
-                <th>Available Positions</th>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="uscengr.com" class="new-window"><b>Doe, John</b></a></td>
-              <td valign="top"><a href="mailto:johndoe@email.sc.edu"><b>johndoe@email.sc.edu</b></a></td>
-              <td valign="top">300MN A400</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Example Research</td>
-            <td valign="top"><a href="https://forms.office.com/r/aWskJJX1JD" class="new-window"><b>3 Positions</b></a></td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/banerjee_sourav.php" class="new-window"><b>Banerjee, Sourav</b></a></td>
-              <td valign="top"><a href="mailto:banerjes@cec.sc.edu"><b>banerjes@cec.sc.edu</b></a></td>
-              <td valign="top">300MN A124</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Computational NDE/SHM, Material State Awareness, Smart Structure/Energy Harvesting, Mechatronics/Robotics, Biomimetic and Metamaterials</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/bayoumi_abdel.php" class="new-window"><b>Bayoumi, Abdel-Moez</b></a></td>
-              <td valign="top"><a href="mailto:bayoumi@sc.edu"><b>bayoumi@sc.edu</b></a></td>
-              <td valign="top">MCNR A223</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Study of condition-based maintenance (CBM) on military aircraft, Micro-Electro Mechanical System (MEMS) and Mechatronics, and design and applications of efficient energy resources and systems</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/besmann_theodore.php" class="new-window"><b>Besmann, Theodore</b></a></td>
-              <td valign="top"><a href="mailto:besmann@cec.sc.edu"><b>besmann@cec.sc.edu</b></a></td>
-              <td valign="top">HRZN 434</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">thermochemical experiment and modeling for nuclear fuel development and in-reactor behavior; development of advanced nuclear waste forms; measurements of basic thermal properties; development of databases for use in fuel performance codes</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/cacuci_dan.php" class="new-window"><b>Cacuci, Dan</b></a></td>
-              <td valign="top"><a href="mailto:cacuci@cec.sc.edu"><b>cacuci@cec.sc.edu</b></a></td>
-              <td valign="top">HRZN</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Sensitivity and uncertainty analysis; Data Assimilation; Predictive Best-Estimate Model Calibration</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/carrilho_leo.php" class="new-window"><b>Carrilho, Leo</b></a></td>
-              <td valign="top"><a href="mailto:carrilla@westinghouse.com"><b>carrilla@westinghouse.com</b></a></td>
-              <td valign="top">N/A</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Modeling and simulation of processes and phenomena in structural and thermal-hydraulic design of PWR nuclear fuel and core components, using the FEA and the CFD methods</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/chen_frank.php" class="new-window"><b>Chen, Fanglin (Frank)</b></a></td>
-              <td valign="top"><a href="mailto:chenfa@cec.sc.edu"><b>chenfa@cec.sc.edu</b></a></td>
-              <td valign="top">HRZN 335</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Synthesis and characterization of materials for energy conversion and storage; Microstructure property relationship; Electroceramics and solid state ionic devices; Electrochemical performance evaluation; catalysis and electrocatalysis</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/deng_xiaomin.php" class="new-window"><b>Deng, Xiaomin</b></a></td>
-              <td valign="top"><a href="mailto:deng@cec.sc.edu"><b>deng@cec.sc.edu</b></a></td>
-              <td valign="top">300MN A130</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Nanomechanics/atomistic simulation; Fracture mechanics/crack-growth simulation; Manufacturing process modeling/simulation (friction stir welding, metal cutting, GMA welding)</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/austin_downey.php" class="new-window"><b>Downey, Austin</b></a></td>
-              <td valign="top"><a href="mailto:austindowney@sc.edu"><b>austindowney@sc.edu</b></a></td>
-              <td valign="top">300MN A133</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Enhancement of safety and serviceability of structures through structural health monitoring and control; investigation of algorithms enabling condition assessment, characterization of sensors, and design and development of structural control systems</td>
-            <td valign="top"><a href="https://www.uscengr.com" class="new-window"><b>Multiple; Send Email</b></a></td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/dryer.php" class="new-window"><b>Dryer, Frederick</b></a></td>
-              <td valign="top"><a href="mailto:dryerf@mailbox.sc.edu"><b>dryerf@mailbox.sc.edu</b></a></td>
-              <td valign="top">300MN A122</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">chemistry/chemical kinetics of fuels and hazardous waste materials; petroleum-derived fuels; non-petroleum derived alternative fuels; fire safety related issues on earth and in microgravity environments; solid phase/gas phase interactions; emissions from internal combustion engines; emissions interactions</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/farouk_tanvir.php" class="new-window"><b>Farouk, Tanvir</b></a></td>
-              <td valign="top"><a href="mailto:farouk@cec.sc.edu"><b>farouk@cec.sc.edu</b></a></td>
-              <td valign="top">300MN A121</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">high carrier density fast switching plasma devices; plasma assisted combustion; plasma aided fuel reforming; cool flames; multicomponent liquid droplet combustion; surrogate fuels for turbine applications; alternative and next generation fuels</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/giurgiutiu_victor.php" class="new-window"><b>Giurgiutiu, Victor</b></a></td>
-              <td valign="top"><a href="mailto:victorg@sc.edu"><b>victorg@sc.edu</b></a></td>
-              <td valign="top">300MN A222</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Active materials; Smart structures; Structural health monitoring; Mechatronics; multi-physics applied mechanics</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/odellglenn.php" class="new-window"><b>Glenn, Odell</b></a></td>
-              <td valign="top"><a href="mailto:glennjro@email.sc.edu"><b>glennjro@email.sc.edu</b></a></td>
-              <td valign="top">300MN A120</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Development of an approach to potentially reduce the potency of asthma triggers produced in an indoor environment; Effectiveness of using dry ice, essential oils with CO2 through CFD modeling and an ELISA assay</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/gray_joshua.php" class="new-window"><b>Gray, Joshua</b></a></td>
-              <td valign="top"><a href="mailto:jgray@mailbox.sc.edu"><b>jgray@mailbox.sc.edu</b></a></td>
-              <td valign="top">300MN A233</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Application of electrochemical engineering to localized corrosion and sustainable energy applications; materials compatibility and corrosion susceptibility; heat transfer fluids; development of alternative separations processes for used nuclear fuel; battery component research and characterization; fuel cell</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/andrewgross.php" class="new-window"><b>Gross, Andrew</b></a></td>
-              <td valign="top"><a href="mailto:andrewgross@sc.edu"><b>andrewgross@sc.edu</b></a></td>
-              <td valign="top">HRZN 336</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Architected materials; Geometry and shape optimization; 3D printing; Nano and micro additive manufacturing; Mechanical property testing; Design for manufacturability; Finite element analysis; Fracture of ceramic and metallic materials; Full field methods for model calibration; Soft robotics; Solid mechanics; Experimental mechanics</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/gurdal_zafer.php" class="new-window"><b>G�rdal, Zafer</b></a></td>
-              <td valign="top"><a href="mailto:gurdal@cec.sc.edu"><b>gurdal@cec.sc.edu</b></a></td>
-              <td valign="top">N/A</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">structural and multidisciplinary design and optimization; design and optimization of composite materials and structure; computational methods for design with manufacturing emphasis</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/harik_ramy.php" class="new-window"><b>Harik, Ramy</b></a></td>
-              <td valign="top"><a href="mailto:harik@cec.sc.edu"><b>harik@cec.sc.edu</b></a></td>
-              <td valign="top">MCNR 120F</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">mechanical feature shape recognition based on persistent heat signature; 5-axis flank milling optimization and obtaining an optimal part build orientation efficiently in additive manufacturing.</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/minghu.php" class="new-window"><b>Hu, Ming</b></a></td>
-              <td valign="top"><a href="mailto:hu@sc.edu"><b>hu@sc.edu</b></a></td>
-              <td valign="top">HRZN 337</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Modeling and simulation of micro-/nano-scale thermal transport in novel energy systems, in particular low-dimensional materials and nanostructures; Energy nanotechnology, interfacial heat transfer for advanced thermal management, and multi-scale and multiphysics modeling of complex energy transport process.</td>
-            <td valign="top"><a href="https://www.uscengr.com" class="new-window"><b>1 Position; Send Email</b></a></td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/huang_kevin.php" class="new-window"><b>Huang, Kevin</b></a></td>
-              <td valign="top"><a href="mailto:huang46@cec.sc.edu"><b>huang46@cec.sc.edu</b></a></td>
-              <td valign="top">HRZN 341</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Solid oxide electrochemical cells; storage batteries; gas separation membranes; solid state defect chemistry and electrochemistry</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/huang_xinyu.php" class="new-window"><b>Huang, Xinyu</b></a></td>
-              <td valign="top"><a href="mailto:huangxin@cec.sc.edu"><b>huangxin@cec.sc.edu</b></a></td>
-              <td valign="top">HRZN 337</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Mechanics and durability of functional and structural composite materials; composite materials in polymer electrolyte membrane fuel cells; solid oxide fuel cells; structural composites; coatings</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/khan_jamil.php" class="new-window"><b>Khan, Jamil</b></a></td>
-              <td valign="top"><a href="mailto:khan@cec.sc.edu"><b>khan@cec.sc.edu</b></a></td>
-              <td valign="top">SWGN 3A45</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Modeling of manufacturing processes; temperature distribution during machining; heat transfer and fluid flow with phase change; computational and experimental fluid dynamics; heat transfer processes</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/knight_travis.php" class="new-window"><b>Knight, Travis</b></a></td>
-              <td valign="top"><a href="mailto:twknight@sc.edu"><b>twknight@sc.edu</b></a></td>
-              <td valign="top">300MN A224</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Advanced nuclear fuels and materials; Nuclear safeguards; Nuclear fuel cycle; Alternative uses of nuclear power, hydrogen; Space nuclear power and propulsion</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/dongkyulee.php" class="new-window"><b>Lee, Dongkyu</b></a></td>
-              <td valign="top"><a href="mailto:dongkyu@cec.sc.edu"><b>dongkyu@cec.sc.edu</b></a></td>
-              <td valign="top">HRZN 338</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Synthesizing functional oxide materials by atomic control; understanding energy conversion and storage mechanisms; applying a fundamental understanding to design advanced energy conversion and storage devices</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/junsoo_lee.php" class="new-window"><b>Lee, Junsoo</b></a></td>
-              <td valign="top"><a href="mailto:junsoo.lee@sc.edu"><b>junsoo.lee@sc.edu</b></a></td>
-              <td valign="top">300MN A132</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">stability theory, optimal control, multiagent systems, network control, and stochastic systems and control.</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/li_chen.php" class="new-window"><b>Li, Chen</b></a></td>
-              <td valign="top"><a href="mailto:li01@cec.sc.edu"><b>li01@cec.sc.edu</b></a></td>
-              <td valign="top">HRZN 340</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Micro/nano-scale two-phase heat; flow physics; prediction; control and modeling; developing and verifying theories for two-phase transport behaviors and the application of these theories towards controlling two-phase heat and flows at micro/nano-scale</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/yue_stanley_ling.php" class="new-window"><b>Ling, Yue (Stanley)</b></a></td>
-              <td valign="top"><a href="mailto:stanley_ling@sc.edu"><b>stanley_ling@sc.edu</b></a></td>
-              <td valign="top">300MN A111</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">CFD, multiphase flows, atomization & sprays, microfluidics, high-performance computing</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/loiselle_val.php" class="new-window"><b>Loiselle, Val</b></a></td>
-              <td valign="top"><a href="mailto:loiselle@cec.sc.edu"><b>loiselle@cec.sc.edu</b></a></td>
-              <td valign="top">N/A</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Nuclear engineering; Environmental remediation; Waste management and disposal of EPA pond closures; Metal recycle manufacturing.</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/lyons_jed.php" class="new-window"><b>Lyons, Jed</b></a></td>
-              <td valign="top"><a href="mailto:lyons@cec.sc.edu"><b>lyons@cec.sc.edu</b></a></td>
-              <td valign="top">SWGN 1A00</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Engineering education; composites and reinforced plastics; design and manufacturing of renewable materials</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/mccants_dale.php" class="new-window"><b>McCants, Dale</b></a></td>
-              <td valign="top"><a href="mailto:mccants@cec.sc.edu"><b>mccants@cec.sc.edu</b></a></td>
-              <td valign="top">300MN A216</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Nanofluids heat transfer mechanics; electronics thermal management; experimental and computational fluid dynamics with heat transfer</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/mostafamobli.php" class="new-window"><b>Mobli, Mostafa</b></a></td>
-              <td valign="top"><a href="mailto:mobli@cec.sc.edu"><b>mobli@cec.sc.edu</b></a></td>
-              <td valign="top">300MN A117</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">numerical solutions to problems involving reactive flows and heat transfer; developing new numerical methods and applying previously developed methods to analyze a wide range of fluid flow and heat transfer applications</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/reynolds_tony.php" class="new-window"><b>Reynolds, Tony (Anthony)</b></a></td>
-              <td valign="top"><a href="mailto:reynolds@cec.sc.edu"><b>reynolds@cec.sc.edu</b></a></td>
-              <td valign="top">300MN A127</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Friction stir welding; fatigue and fracture; experimental micro-mechanics; quantitative fractographic analysis</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/nezhad.php" class="new-window"><b>Riahi-Nezhad, Cyrus</b></a></td>
-              <td valign="top"><a href="mailto:riahinez@cec.sc.edu"><b>riahinez@cec.sc.edu</b></a></td>
-              <td valign="top">300MN A214</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">innovative combinations of fluid mechanics; separation science; heterogeneous catalysis; Separations enhanced by electric fields; High liquid flow in packed towers for optimal gas-liquid phase interaction</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/rocheleau_david.php" class="new-window"><b>Rocheleau, David</b></a></td>
-              <td valign="top"><a href="mailto:rocheleau@cec.sc.edu"><b>rocheleau@cec.sc.edu</b></a></td>
-              <td valign="top">300MN A131</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Engineering design; mechanisms and robotics; Advanced Actuators Group; machine design and machine component design; PEM fuel cell system</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/andrewsabalowsky.php" class="new-window"><b>Sabalowsky, Andrew</b></a></td>
-              <td valign="top"><a href="mailto:sabalows@mailbox.sc.edu"><b>sabalows@mailbox.sc.edu</b></a></td>
-              <td valign="top">300MN A119</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Anaerobic processes, specifically as they relate to bioremediation of hazardous xenobiotic molecules and biofuel production, such has methane and hydrogen production, microbial fuel cells, and fermentable products</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/shazly_tarek.php" class="new-window"><b>Shazly, Tarek</b></a></td>
-              <td valign="top"><a href="mailto:shazly@cec.sc.edu"><b>shazly@cec.sc.edu</b></a></td>
-              <td valign="top">300MN A212</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Relevant tissue properties for clinical applications and rationally designing polymeric biomaterials that leverage local biology to enhance therapeutic gain</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/subramani_sockalingam.php" class="new-window"><b>Sockalingam, Subramini</b></a></td>
-              <td valign="top"><a href="mailto:sockalin@cec.sc.edu"><b>sockalin@cec.sc.edu</b></a></td>
-              <td valign="top">MCNR 1201</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">multiscale finite element modeling and analysis; material characterization; constitutive model development; ballistic impact, design and development of body and vehicle armor; automotive crashworthiness and engineering consulting</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/sutton_michael.php" class="new-window"><b>Sutton, Michael</b></a></td>
-              <td valign="top"><a href="mailto:sutton@cec.sc.edu"><b>sutton@cec.sc.edu</b></a></td>
-              <td valign="top">300MN A129</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">coherent and incoherent optics applications; experimental mechanics; digital image processing; Computer Vision; applications of integral methods and experimental mechanics; boundary valve problems; plastic fracture mechanics; finite elements modeling of cracked bodies</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/vitzilaios.php" class="new-window"><b>Vitzilaios, Nikolaos</b></a></td>
-              <td valign="top"><a href="mailto:vitzilaios@sc.edu"><b>vitzilaios@sc.edu</b></a></td>
-              <td valign="top">300MN A214</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Autonomous Unmanned Systems and include Robotics, Intelligent Systems, Mechatronics, Unmanned Aircraft Systems (UAS), perception and autonomous navigation of mobile robots, operational autonomy, field robotics, robot teams, automation, control systems, and machine learning</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/wang_guiren.php" class="new-window"><b>Wang, Guiren</b></a></td>
-              <td valign="top"><a href="mailto:guirenwang@sc.edu"><b>guirenwang@sc.edu</b></a></td>
-              <td valign="top">300MN A221</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Micro/nanofluidics sensor; lab-on-a-chip; biomechanics; drug delivery; fluid mechanics; turbulence and mixing; optical measurement; fluorescence; bioreactor and tissue engineering; far field optical nanoscopy; cancer detection; fluorescence spectroscopy; fluid dynamics</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/yi_wang.php" class="new-window"><b>Wang, Yi</b></a></td>
-              <td valign="top"><a href="mailto:yiwang@cec.sc.edu"><b>yiwang@cec.sc.edu</b></a></td>
-              <td valign="top">HRZN A211</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Computational and data-enabled science and engineering (CDS&E) and its applications in multiphysics and multiscale systems engineering, including aerospace, microfluidics/nanofluidics, thermal and energy management, additive manufacturing, intelligence, surveillance, and reconnaissance (ISR)</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/sang_hee_won.php" class="new-window"><b>Won, Sang</b></a></td>
-              <td valign="top"><a href="mailto:sanghee@mailbox.sc.edu"><b>sanghee@mailbox.sc.edu</b></a></td>
-              <td valign="top">300MN A125</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Combustion chemistry of real transportation fuels with the state-of-the-art current kinetic models to incorporate multi-species combustion chemistry; role of combustion chemistry in near-limit combustion dynamics; Plasma-assisted combustion techniques; Development of novel combustion diagnostic techniques</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/xue_xingjian.php" class="new-window"><b>Xue, Xingjian (Chris)</b></a></td>
-              <td valign="top"><a href="mailto:xue@cec.sc.edu"><b>xue@cec.sc.edu</b></a></td>
-              <td valign="top">HRZN 339</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Solid Oxide Fuel Cells, Solid Oxide Electrolysis Cells, Gas Separation Membranes, Materials for Electrochemical Energy Conversion and Storage, Reliability and Durability of Functional and Structural Materials, Transport Phenomena and Electrochemical Kinetics</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/yu_lingyu.php" class="new-window"><b>Yu, Lingyu</b></a></td>
-              <td valign="top"><a href="mailto:yu3@cec.sc.edu"><b>yu3@cec.sc.edu</b></a></td>
-              <td valign="top">300MN A220</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Structural health monitoring (SHM); nondestructive evaluation (NDE) using ultrasonic guided waves ; theoretical modeling; advanced signal processing and data analysis; damage diagnosis in complicated structures; scanning laser vibrometry for guided wave propagation; mechatronics</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/lang_yuan.php" class="new-window"><b>Yuan, Lang</b></a></td>
-              <td valign="top"><a href="mailto:langyuan@cec.sc.edu"><b>langyuan@cec.sc.edu</b></a></td>
-              <td valign="top">MCNR 1501</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">Microstrucutre and defect formation, additive manufacturing, integrated computational materials engineering, nucleation, discrete element modeling, diffraction of solidification phenomena and data sciences</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="odd">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/caizhizhou.php" class="new-window"><b>Zhou, Caizhi</b></a></td>
-              <td valign="top"><a href="mailto:caizhi@mailbox.sc.edu"><b>caizhi@mailbox.sc.edu</b></a></td>
-              <td valign="top">300MN A217</td>
-              <td valign="top">Mechanical Engineering</td>
-              <td valign="top">mechanical engineering; understanding the fundamental strengthening, deformation and failure mechanisms of advanced structural materials by integrating both experimental and computational approaches; providing a scientific basis for design; processing advanced materials with superior properties</td>
-            <td valign="top">No Positions</td>
-            </tr>
-            <tr role="row" class="even">
-              <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/woutdebacker.php" class="new-window"><b>De Backer, Wout</b></a></td>
-              <td valign="top"><a href="mailto:wdbacker@cec.sc.edu"><b>wdbacker@cec.sc.edu</b></a></td>
-              <td valign="top">MCNR 150</td>
-              <td valign="top">Aerospace Engineering</td>
-              <td valign="top">Continuous fiber thermoplastic additive manufacturing (FFF, 3D printing), structural design of thermoplastic composites and aircraft design</td>
-            <td valign="top">No Positions</td>
-            </tr>        
-            
+      <!-- initializing rows -->
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Office</th>
+        <th>Department</th>
+        <th>Research Interest</th>
+        <th>Hiring</th>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/banerjee_sourav.php" class="new-window"><b>Banerjee, Sourav</b></a></td>
+        <td valign="top"><a href="mailto:banerjes@cec.sc.edu"><b>banerjes@cec.sc.edu</b></a></td>
+        <td valign="top">300MN A124</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Computational NDE/SHM, Material State Awareness, Smart Structure/Energy Harvesting, Mechatronics/Robotics, Biomimetic and Metamaterials</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/bayoumi_abdel.php" class="new-window"><b>Bayoumi, Abdel-Moez</b></a></td>
+        <td valign="top"><a href="mailto:bayoumi@sc.edu"><b>bayoumi@sc.edu</b></a></td>
+        <td valign="top">MCNR A223</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Study of condition-based maintenance (CBM) on military aircraft, Micro-Electro Mechanical System (MEMS) and Mechatronics, and design and applications of efficient energy resources and systems</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/besmann_theodore.php" class="new-window"><b>Besmann, Theodore</b></a></td>
+        <td valign="top"><a href="mailto:besmann@cec.sc.edu"><b>besmann@cec.sc.edu</b></a></td>
+        <td valign="top">HRZN 434</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">thermochemical experiment and modeling for nuclear fuel development and in-reactor behavior; development of advanced nuclear waste forms; measurements of basic thermal properties; development of databases for use in fuel performance codes</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/cacuci_dan.php" class="new-window"><b>Cacuci, Dan</b></a></td>
+        <td valign="top"><a href="mailto:cacuci@cec.sc.edu"><b>cacuci@cec.sc.edu</b></a></td>
+        <td valign="top">HRZN</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Sensitivity and uncertainty analysis; Data Assimilation; Predictive Best-Estimate Model Calibration</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/carrilho_leo.php" class="new-window"><b>Carrilho, Leo</b></a></td>
+        <td valign="top"><a href="mailto:carrilla@westinghouse.com"><b>carrilla@westinghouse.com</b></a></td>
+        <td valign="top">N/A</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Modeling and simulation of processes and phenomena in structural and thermal-hydraulic design of PWR nuclear fuel and core components, using the FEA and the CFD methods</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/chen_frank.php" class="new-window"><b>Chen, Fanglin (Frank)</b></a></td>
+        <td valign="top"><a href="mailto:chenfa@cec.sc.edu"><b>chenfa@cec.sc.edu</b></a></td>
+        <td valign="top">HRZN 335</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Synthesis and characterization of materials for energy conversion and storage; Microstructure property relationship; Electroceramics and solid state ionic devices; Electrochemical performance evaluation; catalysis and electrocatalysis</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/deng_xiaomin.php" class="new-window"><b>Deng, Xiaomin</b></a></td>
+        <td valign="top"><a href="mailto:deng@cec.sc.edu"><b>deng@cec.sc.edu</b></a></td>
+        <td valign="top">300MN A130</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Nanomechanics/atomistic simulation; Fracture mechanics/crack-growth simulation; Manufacturing process modeling/simulation (friction stir welding, metal cutting, GMA welding)</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/austin_downey.php" class="new-window"><b>Downey, Austin</b></a></td>
+        <td valign="top"><a href="mailto:austindowney@sc.edu"><b>austindowney@sc.edu</b></a></td>
+        <td valign="top">300MN A133</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Enhancement of safety and serviceability of structures through structural health monitoring and control; investigation of algorithms enabling condition assessment, characterization of sensors, and design and development of structural control systems</td>
+      <td valign="top"><a href="https://www.uscengr.com" class="new-window"><b>Multiple; Send Email</b></a></td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/dryer.php" class="new-window"><b>Dryer, Frederick</b></a></td>
+        <td valign="top"><a href="mailto:dryerf@mailbox.sc.edu"><b>dryerf@mailbox.sc.edu</b></a></td>
+        <td valign="top">300MN A122</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">chemistry/chemical kinetics of fuels and hazardous waste materials; petroleum-derived fuels; non-petroleum derived alternative fuels; fire safety related issues on earth and in microgravity environments; solid phase/gas phase interactions; emissions from internal combustion engines; emissions interactions</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/farouk_tanvir.php" class="new-window"><b>Farouk, Tanvir</b></a></td>
+        <td valign="top"><a href="mailto:farouk@cec.sc.edu"><b>farouk@cec.sc.edu</b></a></td>
+        <td valign="top">300MN A121</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">high carrier density fast switching plasma devices; plasma assisted combustion; plasma aided fuel reforming; cool flames; multicomponent liquid droplet combustion; surrogate fuels for turbine applications; alternative and next generation fuels</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/giurgiutiu_victor.php" class="new-window"><b>Giurgiutiu, Victor</b></a></td>
+        <td valign="top"><a href="mailto:victorg@sc.edu"><b>victorg@sc.edu</b></a></td>
+        <td valign="top">300MN A222</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Active materials; Smart structures; Structural health monitoring; Mechatronics; multi-physics applied mechanics</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/odellglenn.php" class="new-window"><b>Glenn, Odell</b></a></td>
+        <td valign="top"><a href="mailto:glennjro@email.sc.edu"><b>glennjro@email.sc.edu</b></a></td>
+        <td valign="top">300MN A120</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Development of an approach to potentially reduce the potency of asthma triggers produced in an indoor environment; Effectiveness of using dry ice, essential oils with CO2 through CFD modeling and an ELISA assay</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/gray_joshua.php" class="new-window"><b>Gray, Joshua</b></a></td>
+        <td valign="top"><a href="mailto:jgray@mailbox.sc.edu"><b>jgray@mailbox.sc.edu</b></a></td>
+        <td valign="top">300MN A233</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Application of electrochemical engineering to localized corrosion and sustainable energy applications; materials compatibility and corrosion susceptibility; heat transfer fluids; development of alternative separations processes for used nuclear fuel; battery component research and characterization; fuel cell</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/andrewgross.php" class="new-window"><b>Gross, Andrew</b></a></td>
+        <td valign="top"><a href="mailto:andrewgross@sc.edu"><b>andrewgross@sc.edu</b></a></td>
+        <td valign="top">HRZN 336</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Architected materials; Geometry and shape optimization; 3D printing; Nano and micro additive manufacturing; Mechanical property testing; Design for manufacturability; Finite element analysis; Fracture of ceramic and metallic materials; Full field methods for model calibration; Soft robotics; Solid mechanics; Experimental mechanics</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/gurdal_zafer.php" class="new-window"><b>G�rdal, Zafer</b></a></td>
+        <td valign="top"><a href="mailto:gurdal@cec.sc.edu"><b>gurdal@cec.sc.edu</b></a></td>
+        <td valign="top">N/A</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">structural and multidisciplinary design and optimization; design and optimization of composite materials and structure; computational methods for design with manufacturing emphasis</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/harik_ramy.php" class="new-window"><b>Harik, Ramy</b></a></td>
+        <td valign="top"><a href="mailto:harik@cec.sc.edu"><b>harik@cec.sc.edu</b></a></td>
+        <td valign="top">MCNR 120F</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">mechanical feature shape recognition based on persistent heat signature; 5-axis flank milling optimization and obtaining an optimal part build orientation efficiently in additive manufacturing.</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/minghu.php" class="new-window"><b>Hu, Ming</b></a></td>
+        <td valign="top"><a href="mailto:hu@sc.edu"><b>hu@sc.edu</b></a></td>
+        <td valign="top">HRZN 337</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Modeling and simulation of micro-/nano-scale thermal transport in novel energy systems, in particular low-dimensional materials and nanostructures; Energy nanotechnology, interfacial heat transfer for advanced thermal management, and multi-scale and multiphysics modeling of complex energy transport process.</td>
+      <td valign="top"><a href="https://www.uscengr.com" class="new-window"><b>1 Position; Send Email</b></a></td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/huang_kevin.php" class="new-window"><b>Huang, Kevin</b></a></td>
+        <td valign="top"><a href="mailto:huang46@cec.sc.edu"><b>huang46@cec.sc.edu</b></a></td>
+        <td valign="top">HRZN 341</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Solid oxide electrochemical cells; storage batteries; gas separation membranes; solid state defect chemistry and electrochemistry</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/huang_xinyu.php" class="new-window"><b>Huang, Xinyu</b></a></td>
+        <td valign="top"><a href="mailto:huangxin@cec.sc.edu"><b>huangxin@cec.sc.edu</b></a></td>
+        <td valign="top">HRZN 337</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Mechanics and durability of functional and structural composite materials; composite materials in polymer electrolyte membrane fuel cells; solid oxide fuel cells; structural composites; coatings</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/khan_jamil.php" class="new-window"><b>Khan, Jamil</b></a></td>
+        <td valign="top"><a href="mailto:khan@cec.sc.edu"><b>khan@cec.sc.edu</b></a></td>
+        <td valign="top">SWGN 3A45</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Modeling of manufacturing processes; temperature distribution during machining; heat transfer and fluid flow with phase change; computational and experimental fluid dynamics; heat transfer processes</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/knight_travis.php" class="new-window"><b>Knight, Travis</b></a></td>
+        <td valign="top"><a href="mailto:twknight@sc.edu"><b>twknight@sc.edu</b></a></td>
+        <td valign="top">300MN A224</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Advanced nuclear fuels and materials; Nuclear safeguards; Nuclear fuel cycle; Alternative uses of nuclear power, hydrogen; Space nuclear power and propulsion</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/dongkyulee.php" class="new-window"><b>Lee, Dongkyu</b></a></td>
+        <td valign="top"><a href="mailto:dongkyu@cec.sc.edu"><b>dongkyu@cec.sc.edu</b></a></td>
+        <td valign="top">HRZN 338</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Synthesizing functional oxide materials by atomic control; understanding energy conversion and storage mechanisms; applying a fundamental understanding to design advanced energy conversion and storage devices</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/junsoo_lee.php" class="new-window"><b>Lee, Junsoo</b></a></td>
+        <td valign="top"><a href="mailto:junsoo.lee@sc.edu"><b>junsoo.lee@sc.edu</b></a></td>
+        <td valign="top">300MN A132</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">stability theory, optimal control, multiagent systems, network control, and stochastic systems and control.</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/li_chen.php" class="new-window"><b>Li, Chen</b></a></td>
+        <td valign="top"><a href="mailto:li01@cec.sc.edu"><b>li01@cec.sc.edu</b></a></td>
+        <td valign="top">HRZN 340</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Micro/nano-scale two-phase heat; flow physics; prediction; control and modeling; developing and verifying theories for two-phase transport behaviors and the application of these theories towards controlling two-phase heat and flows at micro/nano-scale</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/yue_stanley_ling.php" class="new-window"><b>Ling, Yue (Stanley)</b></a></td>
+        <td valign="top"><a href="mailto:stanley_ling@sc.edu"><b>stanley_ling@sc.edu</b></a></td>
+        <td valign="top">300MN A111</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">CFD, multiphase flows, atomization & sprays, microfluidics, high-performance computing</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/loiselle_val.php" class="new-window"><b>Loiselle, Val</b></a></td>
+        <td valign="top"><a href="mailto:loiselle@cec.sc.edu"><b>loiselle@cec.sc.edu</b></a></td>
+        <td valign="top">N/A</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Nuclear engineering; Environmental remediation; Waste management and disposal of EPA pond closures; Metal recycle manufacturing.</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/lyons_jed.php" class="new-window"><b>Lyons, Jed</b></a></td>
+        <td valign="top"><a href="mailto:lyons@cec.sc.edu"><b>lyons@cec.sc.edu</b></a></td>
+        <td valign="top">SWGN 1A00</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Engineering education; composites and reinforced plastics; design and manufacturing of renewable materials</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/mccants_dale.php" class="new-window"><b>McCants, Dale</b></a></td>
+        <td valign="top"><a href="mailto:mccants@cec.sc.edu"><b>mccants@cec.sc.edu</b></a></td>
+        <td valign="top">300MN A216</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Nanofluids heat transfer mechanics; electronics thermal management; experimental and computational fluid dynamics with heat transfer</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/mostafamobli.php" class="new-window"><b>Mobli, Mostafa</b></a></td>
+        <td valign="top"><a href="mailto:mobli@cec.sc.edu"><b>mobli@cec.sc.edu</b></a></td>
+        <td valign="top">300MN A117</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">numerical solutions to problems involving reactive flows and heat transfer; developing new numerical methods and applying previously developed methods to analyze a wide range of fluid flow and heat transfer applications</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/reynolds_tony.php" class="new-window"><b>Reynolds, Tony (Anthony)</b></a></td>
+        <td valign="top"><a href="mailto:reynolds@cec.sc.edu"><b>reynolds@cec.sc.edu</b></a></td>
+        <td valign="top">300MN A127</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Friction stir welding; fatigue and fracture; experimental micro-mechanics; quantitative fractographic analysis</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/nezhad.php" class="new-window"><b>Riahi-Nezhad, Cyrus</b></a></td>
+        <td valign="top"><a href="mailto:riahinez@cec.sc.edu"><b>riahinez@cec.sc.edu</b></a></td>
+        <td valign="top">300MN A214</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">innovative combinations of fluid mechanics; separation science; heterogeneous catalysis; Separations enhanced by electric fields; High liquid flow in packed towers for optimal gas-liquid phase interaction</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/rocheleau_david.php" class="new-window"><b>Rocheleau, David</b></a></td>
+        <td valign="top"><a href="mailto:rocheleau@cec.sc.edu"><b>rocheleau@cec.sc.edu</b></a></td>
+        <td valign="top">300MN A131</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Engineering design; mechanisms and robotics; Advanced Actuators Group; machine design and machine component design; PEM fuel cell system</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/andrewsabalowsky.php" class="new-window"><b>Sabalowsky, Andrew</b></a></td>
+        <td valign="top"><a href="mailto:sabalows@mailbox.sc.edu"><b>sabalows@mailbox.sc.edu</b></a></td>
+        <td valign="top">300MN A119</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Anaerobic processes, specifically as they relate to bioremediation of hazardous xenobiotic molecules and biofuel production, such has methane and hydrogen production, microbial fuel cells, and fermentable products</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/shazly_tarek.php" class="new-window"><b>Shazly, Tarek</b></a></td>
+        <td valign="top"><a href="mailto:shazly@cec.sc.edu"><b>shazly@cec.sc.edu</b></a></td>
+        <td valign="top">300MN A212</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Relevant tissue properties for clinical applications and rationally designing polymeric biomaterials that leverage local biology to enhance therapeutic gain</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/subramani_sockalingam.php" class="new-window"><b>Sockalingam, Subramini</b></a></td>
+        <td valign="top"><a href="mailto:sockalin@cec.sc.edu"><b>sockalin@cec.sc.edu</b></a></td>
+        <td valign="top">MCNR 1201</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">multiscale finite element modeling and analysis; material characterization; constitutive model development; ballistic impact, design and development of body and vehicle armor; automotive crashworthiness and engineering consulting</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/sutton_michael.php" class="new-window"><b>Sutton, Michael</b></a></td>
+        <td valign="top"><a href="mailto:sutton@cec.sc.edu"><b>sutton@cec.sc.edu</b></a></td>
+        <td valign="top">300MN A129</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">coherent and incoherent optics applications; experimental mechanics; digital image processing; Computer Vision; applications of integral methods and experimental mechanics; boundary valve problems; plastic fracture mechanics; finite elements modeling of cracked bodies</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/vitzilaios.php" class="new-window"><b>Vitzilaios, Nikolaos</b></a></td>
+        <td valign="top"><a href="mailto:vitzilaios@sc.edu"><b>vitzilaios@sc.edu</b></a></td>
+        <td valign="top">300MN A214</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Autonomous Unmanned Systems and include Robotics, Intelligent Systems, Mechatronics, Unmanned Aircraft Systems (UAS), perception and autonomous navigation of mobile robots, operational autonomy, field robotics, robot teams, automation, control systems, and machine learning</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/wang_guiren.php" class="new-window"><b>Wang, Guiren</b></a></td>
+        <td valign="top"><a href="mailto:guirenwang@sc.edu"><b>guirenwang@sc.edu</b></a></td>
+        <td valign="top">300MN A221</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Micro/nanofluidics sensor; lab-on-a-chip; biomechanics; drug delivery; fluid mechanics; turbulence and mixing; optical measurement; fluorescence; bioreactor and tissue engineering; far field optical nanoscopy; cancer detection; fluorescence spectroscopy; fluid dynamics</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/yi_wang.php" class="new-window"><b>Wang, Yi</b></a></td>
+        <td valign="top"><a href="mailto:yiwang@cec.sc.edu"><b>yiwang@cec.sc.edu</b></a></td>
+        <td valign="top">HRZN A011</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Computational and data-enabled science and engineering (CDS&E) and its applications in multiphysics and multiscale systems engineering, including aerospace, microfluidics/nanofluidics, thermal and energy management, additive manufacturing, intelligence, surveillance, and reconnaissance (ISR)</td>
+      <td valign="top"><a href="https://emailsc-my.sharepoint.com/:w:/g/personal/jvaught_sc_edu/Ef-QoAemb6VNiCZ-fGMDQWIBlPz0wb6xJb1xkSnhRWzQKw?e=PgjhHA" class="new-window"><b>Multiple</b></a></td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/sang_hee_won.php" class="new-window"><b>Won, Sang</b></a></td>
+        <td valign="top"><a href="mailto:sanghee@mailbox.sc.edu"><b>sanghee@mailbox.sc.edu</b></a></td>
+        <td valign="top">300MN A125</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Combustion chemistry of real transportation fuels with the state-of-the-art current kinetic models to incorporate multi-species combustion chemistry; role of combustion chemistry in near-limit combustion dynamics; Plasma-assisted combustion techniques; Development of novel combustion diagnostic techniques</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/xue_xingjian.php" class="new-window"><b>Xue, Xingjian (Chris)</b></a></td>
+        <td valign="top"><a href="mailto:xue@cec.sc.edu"><b>xue@cec.sc.edu</b></a></td>
+        <td valign="top">HRZN 339</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Solid Oxide Fuel Cells, Solid Oxide Electrolysis Cells, Gas Separation Membranes, Materials for Electrochemical Energy Conversion and Storage, Reliability and Durability of Functional and Structural Materials, Transport Phenomena and Electrochemical Kinetics</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/yu_lingyu.php" class="new-window"><b>Yu, Lingyu</b></a></td>
+        <td valign="top"><a href="mailto:yu3@cec.sc.edu"><b>yu3@cec.sc.edu</b></a></td>
+        <td valign="top">300MN A220</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Structural health monitoring (SHM); nondestructive evaluation (NDE) using ultrasonic guided waves ; theoretical modeling; advanced signal processing and data analysis; damage diagnosis in complicated structures; scanning laser vibrometry for guided wave propagation; mechatronics</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/lang_yuan.php" class="new-window"><b>Yuan, Lang</b></a></td>
+        <td valign="top"><a href="mailto:langyuan@cec.sc.edu"><b>langyuan@cec.sc.edu</b></a></td>
+        <td valign="top">MCNR 1501</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">Microstrucutre and defect formation, additive manufacturing, integrated computational materials engineering, nucleation, discrete element modeling, diffraction of solidification phenomena and data sciences</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="even">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/caizhizhou.php" class="new-window"><b>Zhou, Caizhi</b></a></td>
+        <td valign="top"><a href="mailto:caizhi@mailbox.sc.edu"><b>caizhi@mailbox.sc.edu</b></a></td>
+        <td valign="top">300MN A217</td>
+        <td valign="top">Mechanical Engineering</td>
+        <td valign="top">mechanical engineering; understanding the fundamental strengthening, deformation and failure mechanisms of advanced structural materials by integrating both experimental and computational approaches; providing a scientific basis for design; processing advanced materials with superior properties</td>
+      <td valign="top">No Positions</td>
+      </tr>
+      <tr role="row" class="odd">
+        <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/woutdebacker.php" class="new-window"><b>De Backer, Wout</b></a></td>
+        <td valign="top"><a href="mailto:wdbacker@cec.sc.edu"><b>wdbacker@cec.sc.edu</b></a></td>
+        <td valign="top">MCNR 150</td>
+        <td valign="top">Aerospace Engineering</td>
+        <td valign="top">Continuous fiber thermoplastic additive manufacturing (FFF, 3D printing), structural design of thermoplastic composites and aircraft design</td>
+      <td valign="top">No Positions</td>
+      </tr>
       </table>
       
+
+    <!-- END Faculty table -->
+
+
+
+
     <script>
       function searchTable() {
         // Declare variables

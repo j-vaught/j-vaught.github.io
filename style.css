@@ -1,0 +1,160 @@
+.nav-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav-button-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 20px;
+    height: 2px;
+    background: #333;
+    margin: auto;
+    transition: all 0.2s ease;
+}
+
+.nav-button-line:nth-of-type(2) {
+    top: calc(50% - 6px);
+}
+
+.nav-button-line:nth-of-type(3) {
+    top: calc(50% - 12px);
+}
+
+.nav-button.active .nav-button-line:nth-of-type(1) {
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+.nav-button.active .nav-button-line:nth-of-type(2) {
+    transform: rotate(-45deg);
+    background-color: white;
+}
+
+.nav-button.active .nav-button-line:nth-of-type(3) {
+    opacity: 0;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #72000f;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0.2;
+    transition: all 0.3s ease;
+    z-index: 99;
+}
+
+.nav-button:hover {
+    background: #8d8d8d;
+    opacity: 0.5;
+}
+
+.nav-menu ul {
+    font: 400 1.5em/1.5 'Open Sans', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav-menu li {
+    margin: 20px 0;
+}
+
+.nav-menu a {
+    display: block;
+    border: 3px solid white;
+    /* set width to 30% of screen width*/
+    
+    width: 30vw;
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-menu a:hover {
+    background: #8d8d8d;
+}
+
+.nav-menu.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.intro {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.body {
+    background: white;
+    color: #72000f;
+    font: 400 1.5em/1.5 'Open Sans', sans-serif;
+    padding: 0 20px;
+}
+
+.body h1 {
+    font-family:Arial;
+    color:#73000a;
+    font-size:30px
+}
+
+.leftElement, .rightElement {
+    display: inline-block;
+}
+.modern-button {
+    /* Style the button */
+    background-color: #72000f;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.modern-button:hover {
+    background-color: #570008;
+}
+
+.about-me {
+    background: white;
+    color: #72000f;
+    padding: 20px;
+}
+
+.about-me h2{
+    font-family:Arial;
+    color:#73000a;
+    font-size:30px
+}
+p {
+    position: relative;
+    font-family:Arial;
+    color:#72000f;
+    font-size:25px
+}
