@@ -38,9 +38,9 @@ with open('professors.csv', 'r') as csv_file:
     
     # Determine whether the professor is hiring
     if hiring_description and hiring_website:
-      hiring_html = f'<td valign="top"><a href="{hiring_website}" class="new-window"><b>{hiring_description}</b></a></td>'
+      hiring_html = f'<td valign="top"><a href="{hiring_website}" class="new-window"><b>Available:<br>   {hiring_description}</b></a></td>'
     elif hiring_description:
-      hiring_html = f'<td valign="top"><a href="https://www.uscengr.com" class="new-window"><b>{hiring_description}</b></a></td>'
+      hiring_html = f'<td valign="top"><a href="mailto:{email}" class="new-window"><b>Available:<br>   {hiring_description}</b></a></td>'
     else:
       hiring_html = '<td valign="top">No Positions</td>'
     

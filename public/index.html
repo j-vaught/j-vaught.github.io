@@ -5,8 +5,8 @@
 <!-- Mechanical, Electrical Engineer, Computer Scientist -->
 <!-- Class of 2025 -->
 <!-- University of South Carolina -->
-<!-- Generated on {Current Date} -->
-<!-- use firebase deploy-->
+<!-- Generated on 12-22-2022 -->
+<!-- use "firebase deploy"-->
 
 
 <html>
@@ -133,7 +133,7 @@
         <p>Please email <a href="mailto:ASME@sc.edu"><span>ASME@sc.edu</span></a> directly to be added to the system or to update/edit your entry. Include weblinks,
             research topics/keywords, and any other information you would like provided for students.
         If positions are available, please list available positions to be added to Form.</p>
-    <p>Use the search bar to filter by research type.</p>
+    <p>Use the search bar to filter by research type. [To see only Available Positions, type Available]</p>
     <center><input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search by name or topic..."></center>
 
     <!-- START Faculty table -->
@@ -210,7 +210,7 @@
         <td valign="top">300MN A133</td>
         <td valign="top">Mechanical Engineering</td>
         <td valign="top">Enhancement of safety and serviceability of structures through structural health monitoring and control; investigation of algorithms enabling condition assessment, characterization of sensors, and design and development of structural control systems</td>
-      <td valign="top"><a href="https://www.uscengr.com" class="new-window"><b>Multiple; Send Email</b></a></td>
+      <td valign="top"><a href="mailto:austindowney@sc.edu" class="new-window"><b>Available:<br>   Multiple; Send Email</b></a></td>
       </tr>
       <tr role="row" class="odd">
         <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/dryer.php" class="new-window"><b>Dryer, Frederick</b></a></td>
@@ -282,7 +282,7 @@
         <td valign="top">HRZN 337</td>
         <td valign="top">Mechanical Engineering</td>
         <td valign="top">Modeling and simulation of micro-/nano-scale thermal transport in novel energy systems, in particular low-dimensional materials and nanostructures; Energy nanotechnology, interfacial heat transfer for advanced thermal management, and multi-scale and multiphysics modeling of complex energy transport process.</td>
-      <td valign="top"><a href="https://www.uscengr.com" class="new-window"><b>1 Position; Send Email</b></a></td>
+      <td valign="top"><a href="mailto:hu@sc.edu" class="new-window"><b>Available:<br>   1 Position; Send Email</b></a></td>
       </tr>
       <tr role="row" class="even">
         <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/huang_kevin.php" class="new-window"><b>Huang, Kevin</b></a></td>
@@ -458,7 +458,7 @@
         <td valign="top">HRZN A011</td>
         <td valign="top">Mechanical Engineering</td>
         <td valign="top">Computational and data-enabled science and engineering (CDS&E) and its applications in multiphysics and multiscale systems engineering, including aerospace, microfluidics/nanofluidics, thermal and energy management, additive manufacturing, intelligence, surveillance, and reconnaissance (ISR)</td>
-      <td valign="top"><a href="https://emailsc-my.sharepoint.com/:w:/g/personal/jvaught_sc_edu/Ef-QoAemb6VNiCZ-fGMDQWIBlPz0wb6xJb1xkSnhRWzQKw?e=PgjhHA" class="new-window"><b>Multiple</b></a></td>
+      <td valign="top"><a href="https://emailsc-my.sharepoint.com/:w:/g/personal/jvaught_sc_edu/Ef-QoAemb6VNiCZ-fGMDQWIBlPz0wb6xJb1xkSnhRWzQKw?e=PgjhHA" class="new-window"><b>Available:<br>   Multiple; Click Link for Details</b></a></td>
       </tr>
       <tr role="row" class="even">
         <td valign="top" class="sorting_1"><a href="https://www.sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/sang_hee_won.php" class="new-window"><b>Won, Sang</b></a></td>
@@ -509,12 +509,8 @@
       <td valign="top">No Positions</td>
       </tr>
       </table>
-      
-
+           
     <!-- END Faculty table -->
-
-
-
 
     <script>
       function searchTable() {
@@ -526,7 +522,7 @@
         tr = table.getElementsByTagName("tr");
         // Loop through all table rows, and hide those who don't match the search query
         for (i = 0; i < tr.length; i++) {
-          for(j=0;j<5;j++){
+          for(j=0;j<6;j++){
             td = tr[i].getElementsByTagName("td")[j];
             if (td) {
               txtValue = td.textContent || td.innerText;
